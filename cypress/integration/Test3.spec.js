@@ -1,6 +1,6 @@
 describe('My Third Test Suite', () => {
     beforeEach(() => {
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/") 
+        cy.visit("/AutomationPractice/") 
       }) 
 
     it('Checkboxes', () => {  

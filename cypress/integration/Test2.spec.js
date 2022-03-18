@@ -2,7 +2,7 @@
 
 describe('My Second Test Suite', () => {
     it('My FirstTest case', () => { 
-        cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
+        cy.visit("/seleniumPractise/#/")
         cy.get('.search-keyword').type('ca')
         cy.wait(2000) 
         //Parent child chaining
