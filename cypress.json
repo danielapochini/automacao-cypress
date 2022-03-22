@@ -1,8 +1,18 @@
 {
     "baseUrl": "https://rahulshettyacademy.com/",
-    "defaultCommandTimeout": 6000,
+    "defaultCommandTimeout": 8000,
     "pageLoadTimeout": 20000,
     "modifyObstructiveCode": false,
     "experimentalSourceRewriting":true,
-    "chromeWebSecurity": true
+    "chromeWebSecurity": true,
+    "db": {
+        "userName": "",
+        "password": "",
+        "server": "",
+        "options": {
+            "database": "",
+            "encrypt": true,
+            "rowCollectionOnRequestCompletion" : true
+        }
+    }
 }
