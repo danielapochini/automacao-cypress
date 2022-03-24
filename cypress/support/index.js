@@ -16,6 +16,13 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import sqlServer from 'cypress-sql-server';
-sqlServer.loadDBCommands();
+import addContext from "mochawesome/addContext";
+
+sqlServer.loadDBCommands(); 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+Cypress.on('test:after:run', (test, runnable) => {
+  if (test.state === 'failed') {
+    addContext({test}, { title: "Screenshot", value:`screenshots/${Cypress.spec.name}/${runnable.parent.title} -- ${test.title} (failed).png` })
+  }
+})

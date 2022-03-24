@@ -24,7 +24,6 @@ describe ('My first test suite', () => {
         cy.get('.brand').then((logoelement) =>
         {
             cy.log(logoelement.text())
-        
         })
     })
 })

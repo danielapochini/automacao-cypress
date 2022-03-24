@@ -39,7 +39,7 @@ describe('My Fourth Test Suite', () => {
         }) 
     }) 
 
-    it.only('Handling Mouse Over', () => { 
+    it('Handling Mouse Over', () => { 
         cy.contains('Top').click({force:true})
         cy.url().should('include', 'top')
     }) 

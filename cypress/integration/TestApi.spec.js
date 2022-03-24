@@ -42,7 +42,7 @@ describe('API Test Suite', () => {
         cy.get('p').should('have.text', 'Oops only 1 Book available')
     })
 
-    it.only('API testing', () => { 
+    it('API testing', () => { 
         cy.request('POST', 'http://216.10.245.166/Library/Addbook.php', { 
             "name": "Learn Appium Automation with Java",
             "isbn": "bcggsss",

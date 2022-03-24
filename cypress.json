@@ -3,7 +3,7 @@
     "defaultCommandTimeout": 8000,
     "pageLoadTimeout": 20000,
     "modifyObstructiveCode": false,
-    "experimentalSourceRewriting":true,
+    "experimentalSourceRewriting": true,
     "chromeWebSecurity": true,
     "db": {
         "userName": "",
@@ -12,7 +12,21 @@
         "options": {
             "database": "",
             "encrypt": true,
-            "rowCollectionOnRequestCompletion" : true
+            "rowCollectionOnRequestCompletion": true
+        }
+    },
+    "video": false,
+    "screenshotsFolder": "cypress/reports/mochareports/screenshots",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "screenshotOnRunFailure": false,
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
         }
     }
 }
